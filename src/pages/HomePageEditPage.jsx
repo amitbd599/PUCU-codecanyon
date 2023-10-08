@@ -3,15 +3,16 @@ import React, { Fragment, Suspense } from "react";
 import { Helmet } from "react-helmet";
 
 import FullScreenLoader from "../layout/FullScreenLoader";
-import HomePageEditPageMasterLayout from "../layout/HomePageEditPageMasterLayout";
+import DashboardMasterLayout from "../layout/DashboardMasterLayout";
+import Breadcrumb from "../components/Breadcrumb";
 
-const HomePageEditPageComponent = React.lazy(() =>
-  import("../components/HomePageEditPageComponent")
+const HomePageEditComponent = React.lazy(() =>
+  import("../components/HomePageEditComponent")
 );
 const HomePageEditPage = () => {
   return (
     <Fragment>
-      <HomePageEditPageMasterLayout>
+      <DashboardMasterLayout>
         <Suspense fallback={<FullScreenLoader />}>
           <Helmet>
             <title>
@@ -22,9 +23,10 @@ const HomePageEditPage = () => {
               content="PUCU - React Portfolio Template"
             />
           </Helmet>
-          <HomePageEditPageComponent />
+          <Breadcrumb title={"Home Page Content Edit"} />
+          <HomePageEditComponent />
         </Suspense>
-      </HomePageEditPageMasterLayout>
+      </DashboardMasterLayout>
     </Fragment>
   );
 };

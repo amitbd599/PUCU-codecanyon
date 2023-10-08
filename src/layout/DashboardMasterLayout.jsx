@@ -39,8 +39,8 @@ const DashboardMasterLayout = (props) => {
 
   return (
     <section className="flex">
-      <div className="min-h-screen w-[260px] border-r border-[#4b5563] bg-dashBg px-5 py-6">
-        <div className="sidebar">
+      <div className="sidebar min-h-screen w-[260px] border-r border-[#4b5563] bg-dashBg px-5 py-6">
+        <div className="sidebar-content">
           <div className="border-b border-text py-4">
             <img
               src="assets/images/logo.svg"
@@ -113,7 +113,7 @@ const DashboardMasterLayout = (props) => {
           </ul>
         </div>
       </div>
-      <div className="w-full">{props.children}</div>
+      <div className="w-full pl-[260px]">{props.children}</div>
     </section>
   );
 };

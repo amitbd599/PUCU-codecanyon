@@ -73,6 +73,9 @@ Version      : 1.0.1
   .dashNavNotActive {
     @apply flex items-center gap-2 px-4 py-2 text-base font-medium text-text transition-all duration-300 hover:text-white;
   }
+  .btn {
+    @apply rounded-md bg-theme/90 px-8 py-3 text-center text-base font-semibold text-card outline-none transition-all duration-300 hover:bg-theme;
+  }
 }
 
 /* Hide scrollbar for IE, Edge add Firefox */
@@ -90,6 +93,23 @@ Version      : 1.0.1
   /* WebKit */
   width: 0;
   height: 0;
+}
+.sidebar {
+  width: 0;
+  height: 100%;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.sidebar-content {
+  height: 100%;
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  box-sizing: border-box;
 }
 
 .sub-menu {

@@ -30,7 +30,31 @@ const sidebarData = [
       },
       {
         id: 4,
+        title: "Projects",
+        link: "/dashboard",
+        icon: "fa-regular fa-house",
+      },
+      {
+        id: 5,
         title: "Contact",
+        link: "/dashboard",
+        icon: "fa-regular fa-house",
+      },
+      {
+        id: 6,
+        title: "Reviews",
+        link: "/dashboard",
+        icon: "fa-regular fa-house",
+      },
+      {
+        id: 6,
+        title: "Blog",
+        link: "/dashboard",
+        icon: "fa-regular fa-house",
+      },
+      {
+        id: 6,
+        title: "Error",
         link: "/dashboard",
         icon: "fa-regular fa-house",
       },
@@ -39,7 +63,7 @@ const sidebarData = [
   {
     id: 3,
     title: "Block",
-    icon: "fa-regular fa-house",
+    icon: "",
     links: [
       {
         id: 1,
@@ -69,8 +93,7 @@ const sidebarData = [
   },
   {
     id: 4,
-    title: "Home-4",
-    link: "javascript:void(0)",
+    title: "Layout",
     links: [
       {
         id: 1,
@@ -84,15 +107,59 @@ const sidebarData = [
         link: "/dashboard",
         icon: "fa-regular fa-house",
       },
+    ],
+  },
+  {
+    id: 4,
+    title: "UI Elements",
+    links: [
       {
-        id: 3,
-        title: "Service",
-        link: "/dashboard",
+        id: 1,
+        title: "Home",
+        link: "/dashboards",
         icon: "fa-regular fa-house",
       },
       {
-        id: 4,
-        title: "Contact",
+        id: 2,
+        title: "About",
+        link: "/dashboard",
+        icon: "fa-regular fa-house",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Widgets",
+
+    links: [
+      {
+        id: 1,
+        title: "Home",
+        link: "/dashboards",
+        icon: "fa-regular fa-house",
+      },
+      {
+        id: 2,
+        title: "About",
+        link: "/dashboard",
+        icon: "fa-regular fa-house",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Chat",
+
+    links: [
+      {
+        id: 1,
+        title: "Home",
+        link: "/dashboards",
+        icon: "fa-regular fa-house",
+      },
+      {
+        id: 2,
+        title: "About",
         link: "/dashboard",
         icon: "fa-regular fa-house",
       },

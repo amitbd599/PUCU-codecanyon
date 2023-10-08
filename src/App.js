@@ -13,6 +13,7 @@ import Error from "./pages/Error";
 import { useEffect } from "react";
 import { preToast } from "./helpers/SessionHelper";
 import Dashboard from "./pages/Dashboard";
+import HomePageEditPage from "./pages/HomePageEditPage";
 
 function App() {
   let switchDark = localStorage.getItem("switchDark");
@@ -36,7 +37,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="*" element={<Error />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
-        <Route exact path="/home-page-edit" element={<Dashboard />} />
+        <Route exact path="/home-page-edit" element={<HomePageEditPage />} />
       </Routes>
     </BrowserRouter>
   );
