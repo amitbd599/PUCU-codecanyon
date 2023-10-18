@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import InfoPopover from "../childComponents/InfoPopover";
+import { Link } from "react-router-dom";
 
 const HomePageEditComponent = () => {
   const [imageSrc, setImageSrc] = useState(null);
@@ -19,8 +21,13 @@ const HomePageEditComponent = () => {
   };
   return (
     <section>
+      {/* Profile Info Section Start */}
       <div className="m-[30px] rounded-xl bg-[#36404A] p-[30px]">
-        <p className="text-xl font-medium text-white">Profile Info Edit</p>
+        <div className="flex items-center gap-2">
+          <p className="text-xl font-medium text-white">Profile Info Edit</p>
+          <InfoPopover img={"assets/images/popover/img-2.png"} />
+        </div>
+
         <div className="mt-[16px]">
           <div className="grid gap-5">
             <div className="grid gap-4">
@@ -29,29 +36,29 @@ const HomePageEditComponent = () => {
                 <input
                   type="text"
                   placeholder="Hading Text"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Hading Text Color"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Position"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
               </div>
               <div className="flex gap-3">
                 <input
                   type="text"
                   placeholder="Edit Email"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Mobile Number"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
               </div>
             </div>
@@ -61,22 +68,22 @@ const HomePageEditComponent = () => {
                 <input
                   type="text"
                   placeholder="Facebook ID"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Twitter ID"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Linked In ID"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Instagram ID"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
               </div>
             </div>
@@ -86,12 +93,12 @@ const HomePageEditComponent = () => {
                 <input
                   type="text"
                   placeholder="Button Cover Text"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Button Link"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
+                  className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
                 />
               </div>
             </div>
@@ -162,103 +169,322 @@ const HomePageEditComponent = () => {
               </div>
             </div>
           </div>
-          <div className="mt-[40px] block">
-            <span className="btn cursor-pointer">Save Change</span>
-          </div>
         </div>
       </div>
-      <div className="m-[30px] rounded-xl bg-[#36404A] p-[30px]">
-        <h2 className="text-xl font-medium text-white">Counter Section Edit</h2>
-        <div className="mt-[16px]">
-          <div className="grid gap-5">
-            <div className="grid gap-2">
-              <label className="text-base">Counter Section One Edit</label>
-              <div className="flex gap-3">
-                <input
-                  type="text"
-                  placeholder="Count Number"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
-                <input
-                  type="text"
-                  placeholder="Description"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
-              </div>
-            </div>
-            <div className="grid gap-2">
-              <label className="text-base">Counter Section Two Edit</label>
-              <div className="flex gap-3">
-                <input
-                  type="text"
-                  placeholder="Count Number"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
-                <input
-                  type="text"
-                  placeholder="Description"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
-              </div>
-            </div>
-            <div className="grid gap-2">
-              <label className="text-base">Counter Section Three Edit</label>
-              <div className="flex gap-3">
-                <input
-                  type="text"
-                  placeholder="Count Number"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
-                <input
-                  type="text"
-                  placeholder="Description"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="mt-[40px] block">
-            <span className="btn cursor-pointer">Submit</span>
-          </div>
-        </div>
-      </div>
-      <div className="m-[30px] rounded-xl bg-[#36404A] p-[30px]">
-        <h2 className="text-xl font-medium text-white">
-          Home Profile Image Edit Section
-        </h2>
-        <div className="mt-[16px]">
-          <div className="grid gap-5">
-            <div className="grid gap-2">
-              <label className="text-base">Profile Image Edit</label>
-              <div className="flex gap-3">
-                <input
-                  type="text"
-                  placeholder="Image Link"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
-              </div>
-            </div>
+      {/* Profile Info Section End */}
 
-            <div className="grid gap-2">
-              <label className="text-base">Shape Content Edit</label>
-              <div className="flex gap-3">
-                <input
-                  type="text"
-                  placeholder="Counter"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
-                <input
-                  type="text"
-                  placeholder="Text info"
-                  className="border-border h-[40px] w-full rounded-lg border bg-transparent px-3 outline-none placeholder:text-sm"
-                />
+      <div className="m-[30px] grid grid-cols-12 gap-[20px] ">
+        <div className="col-span-6">
+          <div className=" rounded-xl bg-[#36404A] p-[30px]">
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-medium text-white">
+                Content Top Section Edit
+              </p>
+              <InfoPopover img={"assets/images/popover/img-1.png"} />
+            </div>
+            <div className="mt-[16px]">
+              <div className="grid gap-5">
+                <div className="grid gap-2">
+                  {/* <label className="text-base">Edit Heading info</label> */}
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Sub Heading Text"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                </div>
+                <div className="grid gap-2">
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Heading Text"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                </div>
+                <div className="grid gap-2">
+                  {/* <label className="text-base">Description Edit</label> */}
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="5"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="mt-[40px] block">
-            <span className="btn cursor-pointer">Submit</span>
+
+          <div className=" mt-[20px] rounded-xl bg-[#36404A] p-[30px]">
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-medium text-white">
+                Project Section Edit
+              </p>
+              <InfoPopover img={"assets/images/popover/img-4.png"} />
+            </div>
+            <div className="mt-[16px]">
+              <div className="grid gap-5">
+                <div className="grid gap-2">
+                  <label className="text-base">Edit Heading info</label>
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Heading Text"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent p-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" mt-[20px] rounded-xl bg-[#36404A] p-[30px]">
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-medium text-white">
+                Experience Section Edit
+              </p>
+              <InfoPopover img={"assets/images/popover/img-8.png"} />
+            </div>
+            <div className="mt-[16px]">
+              <div className="flex gap-5">
+                <div className="grid w-full gap-2">
+                  <label className="text-base">Edit Years Of Experience</label>
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Years"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="5"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent p-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+                <div className="grid w-full gap-2">
+                  <label className="text-base">Edit Project Complete</label>
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="CountUp"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="5"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent p-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" mt-[20px] rounded-xl bg-[#36404A] p-[30px]">
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-medium text-white">
+                Testimonials Section Edit
+              </p>
+              <InfoPopover img={"assets/images/popover/img-9.png"} />
+            </div>
+            <div className="mt-[16px]">
+              <div className="grid gap-5">
+                <div className="grid gap-2">
+                  <label className="text-base">Edit Heading info</label>
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Heading Text"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="4"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent p-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div className="col-span-6 ">
+          <div className=" rounded-xl bg-[#36404A] p-[30px]">
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-medium text-white">
+                About Us Section Edit
+              </p>
+              <InfoPopover img={"assets/images/popover/img-3.png"} />
+            </div>
+            <div className="mt-[16px]">
+              <div className="grid gap-5">
+                <div className="grid gap-2">
+                  <label className="text-base">Upload Logo</label>
+                  <div className="flex gap-3">
+                    <input type="file" accept="image/*" />
+                  </div>
+                </div>
+                <div className="grid gap-2">
+                  {/* <label className="text-base">Edit Description</label> */}
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Heading Text"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent p-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-[20px] rounded-xl bg-[#36404A] p-[30px]">
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-medium text-white">
+                Service Offer Section Edit
+              </p>
+              <InfoPopover img={"assets/images/popover/img-5.png"} />
+            </div>
+            <div className="mt-[16px]">
+              <div className="grid gap-5">
+                <div className="grid gap-2">
+                  <label className="text-base">
+                    Upload Images{" "}
+                    <span className="text-sm text-red-500">(Max 3)</span>
+                  </label>
+                  <div className="flex gap-3">
+                    <input type="file" accept="image/*" />
+                  </div>
+                </div>
+                <div className="grid gap-2">
+                  {/* <label className="text-base">Edit Description</label> */}
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Heading Text"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent p-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-[20px] rounded-xl bg-[#36404A] p-[30px]">
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-medium text-white">
+                Blog Section Edit
+              </p>
+              <InfoPopover img={"assets/images/popover/img-6.png"} />
+            </div>
+            <div className="mt-[16px]">
+              <div className="grid gap-5">
+                <div className="grid gap-2">
+                  <label className="text-base">Edit Heading info</label>
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Heading Text"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent p-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-[20px] rounded-xl bg-[#36404A] p-[30px]">
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-medium text-white">
+                Contact Section Edit
+              </p>
+              <InfoPopover img={"assets/images/popover/img-7.png"} />
+            </div>
+            <div className="mt-[16px]">
+              <div className="grid gap-5">
+                <div className="grid gap-2">
+                  <label className="text-base">Edit Heading info</label>
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      placeholder="Heading Text"
+                      className="h-[40px] w-full rounded-lg border border-border bg-transparent px-3 outline-none placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Description"
+                      className=" w-full rounded-lg border border-border bg-transparent p-3 outline-none placeholder:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="m-[30px] ">
+        <button className="btn">Save Change</button>
       </div>
     </section>
   );

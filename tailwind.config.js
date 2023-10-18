@@ -30,6 +30,7 @@ module.exports = withMT({
       text: "#919295",
       btn: "#29282D",
       dashBg: "#36404A",
+      border: "#4b5563",
     },
     screens: {
       sm: "380px",
